@@ -121,7 +121,8 @@ Et une alarme se déclenche automatiquement en cas d'échec :
 
 ![Alarme CloudWatch](docs/cloudwatch_alarme.jpg)
 
-```
+---
+
 
 ## Structure du projet
 
