@@ -111,7 +111,7 @@ Toute l'infrastructure est provisionnée par Terraform en une commande.
 
 **Monitoring CloudWatch** — alarme qui se déclenche en cas d'échec du pipeline :
 
-![Alarme CloudWatch](docs/Cloudwatch.jpg)
+![Alarme CloudWatch](docs/Cloudwatch_logs.jpg)
 
 ---
 
