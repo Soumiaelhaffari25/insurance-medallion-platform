@@ -1,0 +1,63 @@
+{
+  "expectation_suite_name": "default",
+  "ge_cloud_id": null,
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "id_pol"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "id_pol"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "exposure",
+        "min_value": 0,
+        "max_value": 1,
+        "strict_min": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "driver_age",
+        "min_value": 18,
+        "max_value": 99
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "veh_gas",
+        "value_set": [
+          "Regular",
+          "Diesel"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "bonus_malus",
+        "min_value": 50,
+        "max_value": 350
+      },
+      "meta": {}
+    }
+  ],
+  "data_asset_type": "Dataset",
+  "meta": {
+    "great_expectations_version": "0.18.19"
+  }
+}

@@ -1,0 +1,8 @@
+# Modele de variables. Copier en terraform.tfvars (gitignore) .
+
+s3_bucket_name = "insurance-medallion-soumia-2026" # doit etre unique au monde
+
+# Snowflake : de preference via variables d'environnement plutot qu'ici :
+#   $env:TF_VAR_snowflake_account  = "xy12345.eu-west-1"
+#   $env:TF_VAR_snowflake_user     = "SOUMIA"
+#   $env:TF_VAR_snowflake_password = "..."

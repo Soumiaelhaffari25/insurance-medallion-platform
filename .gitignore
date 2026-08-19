@@ -1,0 +1,32 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Data (freMTPL2 trop lourd)
+data/
+*.parquet
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+!*.tfvars.example
+
+# SQLMesh / DuckDB
+*.db
+.cache/
+logs/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+dashboard/.streamlit/secrets.toml
+
+# Dagster temp
+tmp*/
+
+# OS / IDE
+.DS_Store
+.vscode/

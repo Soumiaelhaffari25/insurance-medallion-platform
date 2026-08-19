@@ -1,0 +1,18 @@
+# Configuration SQLMesh - Insurance Medallion Platform (Snowflake)
+
+gateways:
+  snowflake:
+    connection:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+
+default_gateway: snowflake
+
+model_defaults:
+  dialect: snowflake
+  start: 2024-01-01
