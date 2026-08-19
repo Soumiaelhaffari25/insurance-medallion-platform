@@ -101,6 +101,10 @@ Toute l'infrastructure est provisionnée par Terraform en une commande.
 
 ![Données S3](docs/S3_data.jpg)
 
+**Accès sécurisé par IAM** — un rôle dédié autorise Snowflake à lire le bucket S3, selon le principe du moindre privilège (lecture seule, sur ce bucket uniquement) :
+
+![Rôle IAM](docs/IAM.jpg)
+
 **Architecture médaillon sur Snowflake** — schémas Bronze / Silver / Gold :
 
 ![Schémas Snowflake](docs/snowflake_schemas.jpg)
@@ -109,11 +113,14 @@ Toute l'infrastructure est provisionnée par Terraform en une commande.
 
 ![Volumes par couche](docs/snowflake_pipeline_complet.jpg)
 
-**Monitoring CloudWatch** — alarme qui se déclenche en cas d'échec du pipeline :
+**Monitoring CloudWatch** — le pipeline écrit ses logs dans un groupe de journaux dédié :
 
-![Alarme CloudWatch](docs/Cloudwatch.jpg)
+![Logs CloudWatch](docs/cloudwatch_log_group.jpg)
 
----
+Et une alarme se déclenche automatiquement en cas d'échec :
+
+![Alarme CloudWatch](docs/cloudwatch_alarme.jpg)
+```
 
 ## Structure du projet
 
