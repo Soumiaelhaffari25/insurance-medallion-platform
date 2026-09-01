@@ -10,7 +10,7 @@
 
 En assurance automobile, l'assureur encaisse des primes aujourd'hui contre la promesse de payer les sinistres futurs. Tout l'enjeu est de fixer le juste prix : trop bas, l'assureur perd de l'argent ; trop haut, les bons clients partent.
 
-La question centrale à laquelle répond ce projet :
+La question centrale à laquelle répond ce projet:
 
 > **Quels profils d'assurés coûtent réellement cher, et sont-ils tarifés au bon prix ?**
 
