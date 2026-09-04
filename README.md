@@ -159,7 +159,7 @@ pip install -r requirements.txt
 
 ### Configuration
 
-Copier `.env.example` et renseigner les identifiants AWS et Snowflake (voir le fichier pour les variables attendues). Les secrets ne sont jamais commités.
+Copier `.env.example` et renseigner les identifiants AWS et Snowflake (voir le fichier pour les variables attendues). 
 
 ### Déploiement de l'infrastructure
 
